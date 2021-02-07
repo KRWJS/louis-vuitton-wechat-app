@@ -1,0 +1,54 @@
+//
+// Base
+// --------------------------------------------------
+
+
+/**
+  Body
+
+  These are the styles for the website body
+  They are the generic styles used throughout the website
+  They should include there relevant responsive states **/
+
+html,
+body{
+  overflow-y: hidden;
+  height: 100%;
+}
+
+body{
+  @include font-smoothing(antialiased);
+  background: $white-base;
+  font-family: $font-family-base;
+}
+
+
+:focus {
+  outline: none;
+}
+
+
+a,
+a:hover,
+a:active,
+a:focus{
+  outline: none;
+  text-decoration: none;
+}
+
+
+a{
+  @include transition-duration(0.3s);
+  cursor: pointer;
+  font-size: 21px;
+}
+
+
+strong{
+  font-weight: bold;
+}
+
+
+sup{
+  top: 0;
+}

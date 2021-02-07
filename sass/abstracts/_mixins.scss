@@ -1,0 +1,167 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin appearance ($appearance) {
+	-webkit-appearance: $appearance;
+	   -moz-appearance: $appearance;
+	        appearance: $appearance;
+}
+
+
+@mixin full-width-image($img-uri, $background-top:"center", $background-left:"center"){
+  background: url($img-uri) no-repeat unquote($background-top) unquote($background-left);
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+       -moz-box-shadow:inset $top $left $blur $color;
+            box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+       -moz-box-shadow: $top $left $blur $color;
+            box-shadow: $top $left $blur $color;
+  }
+}
+
+
+@mixin vcenter(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+@mixin text-shadow($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color;
+}
+
+
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
+
+@mixin transition-duration($duration) {
+  -webkit-transition: $duration;
+     -moz-transition: $duration;
+      -ms-transition: $duration;
+       -o-transition: $duration;
+          transition: $duration;
+}
+
+
+@mixin transition-delay($delay) {
+  -webkit-transition: $delay;
+     -moz-transition: $delay;
+      -ms-transition: $delay;
+       -o-transition: $delay;
+          transition: $delay;
+}
+
+
+@mixin font-awesome(){
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+
+@mixin font-smoothing($value: antialiased) {
+
+  @if $value == antialiased {
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  @else {
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+
+  }
+
+}
+
+@mixin translateY-rotate($translateY, $rotate){
+  -webkit-transform: translateY($translateY) rotate($rotate);
+     -moz-transform: translateY($translateY) rotate($rotate);
+      -ms-transform: translateY($translateY) rotate($rotate);
+       -o-transform: translateY($translateY) rotate($rotate);
+          transform: translateY($translateY) rotate($rotate);
+}
+
+
+@mixin translateX-translateY($translateX, $translateY){
+  -webkit-transform: translateX($translateY) translateY($translateY);
+     -moz-transform: translateX($translateY) translateY($translateY);
+      -ms-transform: translateX($translateY) translateY($translateY);
+       -o-transform: translateX($translateY) translateY($translateY);
+          transform: translateX($translateY) translateY($translateY);
+}
+
+
+@mixin translateZ($translateZ){
+  -webkit-transform: translateZ($translateZ);
+     -moz-transform: translateZ($translateZ);
+      -ms-transform: translateZ($translateZ);
+       -o-transform: translateZ($translateZ);
+          transform: translateZ($translateZ);
+}
+
+
+@mixin scale($scale){
+  -webkit-transform: scale($scale);
+     -moz-transform: scale($scale);
+      -ms-transform: scale($scale);
+       -o-transform: scale($scale);
+          transform: scale($scale);
+}
+
+
+@mixin transform-origin($originX, $originY) {
+  will-change: transform;
+  -webkit-transform-origin: $originX, $originY;
+     -moz-transform-origin: $originX, $originY;
+      -ms-transform-origin: $originX, $originY;
+       -o-transform-origin: $originX, $originY;
+          transform-origin: $originX, $originY;
+                 transform: $originX, $originY;
+}
+
+
+@mixin backface($backface){
+  -webkit-backface-visibility: $backface;
+          backface-visibility: $backface;
+}
+
+
+@mixin centerContent(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

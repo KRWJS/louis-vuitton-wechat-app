@@ -1,0 +1,17 @@
+//
+// Section 3
+// --------------------------------------------------
+
+section#s3{
+  min-width: 950px;
+}
+
+.s3-content{
+
+  & img{
+    width: 850px;
+    position: absolute;
+    bottom: 0;
+  }
+
+}

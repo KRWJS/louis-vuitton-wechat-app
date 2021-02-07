@@ -1,0 +1,86 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+
+
+
+/**
+
+Contents
+--------------------------------------------------
+
+  1.0 - Typography
+  2.0 - Colours
+  3.0 - Padding
+  4.0 - Margin
+
+**/
+
+
+
+
+
+/**
+
+1.0 - Typography
+-------------------------------------------------- **/
+
+
+$font-family-base:        'Lato', sans-serif;
+$font-icon-base:          'Glyphicons Halflings';
+
+$font-size-base:          16px;
+$font-size-btn-vacacy:    20px;
+$font-size-btn-span:      14px;
+
+$font-size-h1:            ceil(($font-size-base * 2.5));    // ~40px
+$font-size-h1-mobile:     ceil(($font-size-base * 1.6));    // ~26px
+
+$font-size-small:         ceil(($font-size-base * 1.1));    // ~18px
+$font-size-medium:        ceil(($font-size-base * 1.37));   // ~22px
+
+$font-size-btn-large:            ceil(($font-size-base * 2.2));      // ~36px
+$font-size-btn-large-mobile:     ceil(($font-size-base * 1.37));     // ~22px
+
+$line-height-base:        26px;
+
+
+
+
+
+/**
+
+2.0 - Colours
+-------------------------------------------------- **/
+
+
+$black-base:              #000000;
+$white-base:              #FFFFFF;
+
+$yellow-base:             #ffd200;
+
+$brown-base:              #533f34;
+
+/**
+
+3.0 - Padding
+-------------------------------------------------- **/
+
+
+$default-padding:         4.11em 15px;
+
+
+
+
+
+/**
+
+4.0 - Margin
+-------------------------------------------------- **/
+
+
+$default-margin:         25px;
+$large-margin-both:      57px 0;
+$btn-margin-bottom:      30px;

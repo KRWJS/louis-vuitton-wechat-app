@@ -1,0 +1,25 @@
+//
+// Section 13
+// --------------------------------------------------
+
+
+section#s13{
+  background-image: url("../images/s13-image-building.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.s13-content{
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  & img{
+    margin-bottom: 30px;
+    width: 156px;
+    height: 58px;
+  }
+}

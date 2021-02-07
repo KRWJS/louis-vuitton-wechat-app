@@ -1,0 +1,35 @@
+//
+// Section 11
+// --------------------------------------------------
+
+
+section#s11{
+  background-image: url("../images/s11-image.png");
+  background-color: $white-base;
+  background-repeat: no-repeat;
+  background-position: center -360px;
+  background-size: cover;
+  min-width: 1877px;
+  margin-left: -250px;
+}
+
+
+.s11-content{
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  left: 33%;
+  padding: 10px;
+} 
+
+
+.s11-content--border{
+  padding: 20px;
+  border: 3px solid $brown-base;
+
+  & h2{
+    font-size: 30px;
+    margin: 0 0 1em;
+    color: $brown-base;
+  }
+
+}

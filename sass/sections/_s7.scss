@@ -1,0 +1,22 @@
+//
+// Section 7
+// --------------------------------------------------
+
+
+section#s7{
+  min-width: 515px;
+}
+
+
+.s7-content{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  & img{
+    width: 286px;
+    height: 274px;
+  }
+
+}

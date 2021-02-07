@@ -1,0 +1,18 @@
+//
+// Section 1
+// --------------------------------------------------
+
+
+.s1-content{
+  text-align: center;
+
+  & a{
+    color: $yellow-base;
+    text-shadow: 3px 0 7px rgba(45, 45, 15, 0.55);
+    font-weight: bold;
+    font-size: 30px;
+    display: block;
+    margin: 40px 0;
+  }
+
+}

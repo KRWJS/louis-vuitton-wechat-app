@@ -1,0 +1,30 @@
+//
+// Section 9
+// --------------------------------------------------
+
+
+section#s9{
+  min-width: 1520px;
+  background-image: url("../images/s9-image.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-position-x: 10px;
+}
+
+.s9-content--upper{
+  top: 15%;
+  right: 37%;
+}
+
+
+.s9-content--lower{
+  bottom: 15%;
+  right: 38%;
+}
+
+
+.s9-content--upper,
+.s9-content--lower{
+  position: absolute;
+}
